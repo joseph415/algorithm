@@ -12,5 +12,12 @@ def digit_sum(x):
 
 t = int(input())
 n = input().split()
+res = [digit_sum(i) for i in n]
+Max = -2174000000
+score = 0
+for idx, x in enumerate(res):
+    if Max < x:
+        Max = x
+        score = n[idx]
 
-print(n)
+print(score)
