@@ -7,7 +7,7 @@ def sol():
     t = int(input())
     List = list(map(int, input().split()))
     avg = round(sum(List) / t)
-    temp = 217000000
+    temp = 21700000
     for idx, value in enumerate(List):
         if abs(value - avg) < temp:
             temp = abs(value - avg)
