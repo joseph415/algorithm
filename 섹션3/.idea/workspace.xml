@@ -1,17 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fd411ba-64dc-4fa0-9684-8a41fc3201db" name="Default Changelist" comment="" />
+    <list default="true" id="1fd411ba-64dc-4fa0-9684-8a41fc3201db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/1. 이분검색/Judge(Python).exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1. 이분검색/in1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1. 이분검색/in2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1. 이분검색/in3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1. 이분검색/in4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1. 이분검색/in5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1. 이분검색/out1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1. 이분검색/out2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1. 이분검색/out3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1. 이분검색/out4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1. 이분검색/out5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10. 역수열/Judge(Python).exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10. 역수열/in1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10. 역수열/in2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10. 역수열/in3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10. 역수열/in4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10. 역수열/in5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10. 역수열/out1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10. 역수열/out2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10. 역수열/out3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10. 역수열/out4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10. 역수열/out5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2. 랜선자르기/Judge(Python).exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2. 랜선자르기/in1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2. 랜선자르기/in2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2. 랜선자르기/in3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2. 랜선자르기/in4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2. 랜선자르기/in5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2. 랜선자르기/out1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2. 랜선자르기/out2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2. 랜선자르기/out3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2. 랜선자르기/out4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2. 랜선자르기/out5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3. 뮤직비디오/Judge(Python).exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3. 뮤직비디오/in1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3. 뮤직비디오/in2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3. 뮤직비디오/in3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3. 뮤직비디오/in4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3. 뮤직비디오/in5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3. 뮤직비디오/out1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3. 뮤직비디오/out2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3. 뮤직비디오/out3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3. 뮤직비디오/out4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3. 뮤직비디오/out5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4. 마구간 정하기/Judge(Python).exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4. 마구간 정하기/in1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4. 마구간 정하기/in2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4. 마구간 정하기/in3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4. 마구간 정하기/in4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4. 마구간 정하기/in5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4. 마구간 정하기/out1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4. 마구간 정하기/out2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4. 마구간 정하기/out3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4. 마구간 정하기/out4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4. 마구간 정하기/out5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5. 회의실 배정/Judge(Python).exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5. 회의실 배정/in1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5. 회의실 배정/in2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5. 회의실 배정/in3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5. 회의실 배정/in4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5. 회의실 배정/in5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5. 회의실 배정/out1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5. 회의실 배정/out2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5. 회의실 배정/out3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5. 회의실 배정/out4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5. 회의실 배정/out5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. 씨름선수/Judge(Python).exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. 씨름선수/in1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. 씨름선수/in2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. 씨름선수/in3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. 씨름선수/in4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. 씨름선수/in5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. 씨름선수/out1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. 씨름선수/out2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. 씨름선수/out3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. 씨름선수/out4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6. 씨름선수/out5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7. 창고 정리/Judge(Python).exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7. 창고 정리/in1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7. 창고 정리/in2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7. 창고 정리/in3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7. 창고 정리/in4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7. 창고 정리/in5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7. 창고 정리/out1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7. 창고 정리/out2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7. 창고 정리/out3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7. 창고 정리/out4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7. 창고 정리/out5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8. 침몰하는 타이타닉/Judge(Python).exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8. 침몰하는 타이타닉/in1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8. 침몰하는 타이타닉/in2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8. 침몰하는 타이타닉/in3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8. 침몰하는 타이타닉/in4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8. 침몰하는 타이타닉/in5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8. 침몰하는 타이타닉/out1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8. 침몰하는 타이타닉/out2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8. 침몰하는 타이타닉/out3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8. 침몰하는 타이타닉/out4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8. 침몰하는 타이타닉/out5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9. 증가수열 만들기/AA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9. 증가수열 만들기/Judge(Python).exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9. 증가수열 만들기/in1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9. 증가수열 만들기/in2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9. 증가수열 만들기/in3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9. 증가수열 만들기/in4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9. 증가수열 만들기/in5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9. 증가수열 만들기/out1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9. 증가수열 만들기/out2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9. 증가수열 만들기/out3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9. 증가수열 만들기/out4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9. 증가수열 만들기/out5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/소스코드/1. 이분검색.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/소스코드/10. 역수열.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/소스코드/2. 랜선자르기.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/소스코드/3. 뮤직비디오(결정알고리즘).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/소스코드/4. 마구간 정하기.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/소스코드/5. 회의실 배정.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/소스코드/6. 씨름선수.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/소스코드/7. 창고 정리.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/소스코드/8. 침몰하는 타이타닉.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/소스코드/9. 증가수열 만들기.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/섹션3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/섹션3.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1VvNCgaeJ3HoFuL5SDDnU2klwL2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -20,6 +155,41 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="섹션3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -44,6 +214,7 @@
       <option name="presentableId" value="Default" />
       <updated>1578129482712</updated>
       <workItem from="1578129492179" duration="72000" />
+      <workItem from="1578465479322" duration="1133000" />
     </task>
     <servers />
   </component>
@@ -51,9 +222,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="417" y="250" key="com.intellij.ide.util.TipDialog" timestamp="1578129559187">
+    <state x="261" y="40" key="CommitChangelistDialog2" timestamp="1578466712881">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
+    <state x="261" y="40" key="CommitChangelistDialog2/0.23.1440.829@0.23.1440.829" timestamp="1578466712881" />
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1578466701413">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1578466701413" />
+    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1578466701411">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1578466701411" />
+    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1578466701410">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1578466701410" />
+    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1578466701412">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1578466701412" />
+    <state x="417" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1578465480601">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="417" y="246" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1578465480601" />
     <state x="417" y="250" key="com.intellij.ide.util.TipDialog/0.23.1440.829@0.23.1440.829" timestamp="1578129559187" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/3$1.coverage" NAME="1 Coverage Results" MODIFIED="1578466686864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
