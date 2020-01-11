@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fd411ba-64dc-4fa0-9684-8a41fc3201db" name="Default Changelist" comment="이분탐색&#10;&#10;간단한 이분탐색 알고리즘이다">
-      <change afterPath="$PROJECT_DIR$/3. 뮤직비디오/in6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4. 마구간 정하기/in6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +40,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.3">
+  <component name="RunManager" selected="Python.4">
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="섹션3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,8 +107,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="섹션3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.4" />
         <item itemvalue="Python.3" />
         <item itemvalue="Python.2" />
         <item itemvalue="Python.1" />
@@ -139,7 +162,8 @@
       <updated>1578129482712</updated>
       <workItem from="1578129492179" duration="72000" />
       <workItem from="1578465479322" duration="1814000" />
-      <workItem from="1578482205407" duration="9259000" />
+      <workItem from="1578482205407" duration="10467000" />
+      <workItem from="1578559437012" duration="6365000" />
     </task>
     <servers />
   </component>
@@ -159,31 +183,36 @@
       <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state x="261" y="40" key="CommitChangelistDialog2/0.23.1440.829@0.23.1440.829" timestamp="1578466750878" />
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1578499218295">
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom" timestamp="1578748547913">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1578499218295" />
-    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1578499218294">
+    <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1578748547913" />
+    <state width="1398" height="214" key="GridCell.Tab.0.center" timestamp="1578748547912">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1578499218294" />
-    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1578499218294">
+    <state width="1398" height="214" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1578748547912" />
+    <state width="1398" height="214" key="GridCell.Tab.0.left" timestamp="1578748547912">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1578499218294" />
-    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1578499218295">
+    <state width="1398" height="214" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1578748547912" />
+    <state width="1398" height="214" key="GridCell.Tab.0.right" timestamp="1578748547912">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
-    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1578499218295" />
-    <state x="417" y="250" key="com.intellij.ide.util.TipDialog" timestamp="1578482207881">
+    <state width="1398" height="214" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1578748547912" />
+    <state x="417" y="250" key="com.intellij.ide.util.TipDialog" timestamp="1578559437125">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state x="417" y="246" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1578465480601" />
-    <state x="417" y="250" key="com.intellij.ide.util.TipDialog/0.23.1440.829@0.23.1440.829" timestamp="1578482207881" />
+    <state x="417" y="250" key="com.intellij.ide.util.TipDialog/0.23.1440.829@0.23.1440.829" timestamp="1578559437125" />
+    <state x="385" y="176" width="670" height="676" key="search.everywhere.popup" timestamp="1578747339134">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="385" y="176" width="670" height="676" key="search.everywhere.popup/0.23.1440.829@0.23.1440.829" timestamp="1578747339134" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/3$1.coverage" NAME="1 Coverage Results" MODIFIED="1578483599709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/3$3.coverage" NAME="3 Coverage Results" MODIFIED="1578499218285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3$4.coverage" NAME="4 Coverage Results" MODIFIED="1578748339925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3$3.coverage" NAME="3 Coverage Results" MODIFIED="1578645597725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/3$2.coverage" NAME="2 Coverage Results" MODIFIED="1578484581092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
