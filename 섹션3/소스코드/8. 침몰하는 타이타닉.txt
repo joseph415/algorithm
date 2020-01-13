@@ -1,5 +1,6 @@
 import sys
-from collections import deque
+from collections import deque #리스트는 배열처럼 자료가 이동하니까 디큐를 이용해서 포인터만 바꿔서
+                              #리스트는 순서가 있고 인덱스 접근 리스트 개별슬롯에 순서대로 넣음 맨앞 pop할시 전부 떙겨줌 0부터 인덱스가 시작해서임
 sys.stdin=open("input.txt", "r")
 n, limit=map(int, input().split())
 p=list(map(int, input().split()))
@@ -11,11 +12,11 @@ while p:
         cnt+=1
         break
     if p[0]+p[-1]>limit:
-        p.pop()
+        p.pop()  #가장 마지막 놈은 가장작은거랑 묶여도 m이상이므로 혼자 태워 보냄
         cnt+=1
     else:
-        p.popleft()
-        p.pop()
+        p.popleft()  #가장 앞에 자료 팝 리스트일경우 p.pop(0)
+        p.pop() #가장 뒤에 자료 팝
         cnt+=1
 print(cnt)
 
