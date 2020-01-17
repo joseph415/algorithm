@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin = open("./9. 증가수열 만들기/in5.txt")
+sys.stdin = open("./9. 증가수열 만들기/in2.txt")
 
 n = int(input())
 List = list(map(int, input().split()))
@@ -28,8 +28,6 @@ while lp <= rp:
             res.append('L')
             lp += 1
         else:
-            if rp == lp:
-                break
             if temp < List[rp]:
                 temp = List[rp]
                 res.append('R')
