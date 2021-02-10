@@ -13,6 +13,9 @@ for i in range(n - 1):
     word = input()
     p[word] = 0
 
+for i in p:
+    print(p[i])
+
 for i in p.keys():
     if p[i] == 1:
         print(i)
