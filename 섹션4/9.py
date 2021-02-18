@@ -1,39 +1,39 @@
 import sys
-import operator
-#print(sorted(p.items(), key=operator.itemgetter(0)))
 
-sys.stdin = open("./9. 아나그램(구글)/in5.txt", "rt")
-word1 = input()
-word2 = input()
+sys.stdin = open("./9. 증가수열 만들기/in2.txt")
 
-p = dict()
-q = dict()
+n = int(input())
+List = list(map(int, input().split()))
 
-for i in word1:
-    if i in p.keys():
-        p[i] += 1
-        continue
-    p[i] = 1
-
-for i in word2:
-    if i in q.keys():
-        q[i] += 1
-        continue
-    q[i] = 1
-
-if p == q:
-    print("YES")
-else:
-    print("NO")
-
-for key in p.keys():
-    if key in q.keys():
-        if p[key] != q[key]:
-            print("NO")
-            break
+lp = 0
+rp = n - 1
+res = []
+temp = -1
+while lp <= rp:
+    if List[rp] < List[lp]:
+        if temp < List[rp]:
+            temp = List[rp]
+            res.append('R')
+            rp -= 1
+        else:
+            if temp < List[lp]:
+                temp = List[lp]
+                res.append('L')
+                lp += 1
+            else:
+                break
     else:
-        print("NO")
-        break
-else:
-    print("YES")
-
+        if temp < List[lp]:
+            temp = List[lp]
+            res.append('L')
+            lp += 1
+        else:
+            if temp < List[rp]:
+                temp = List[rp]
+                res.append('R')
+                rp -= 1
+            else:
+                break
+print(len(res))
+for i in res:
+    print(i, end="")

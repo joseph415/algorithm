@@ -1,30 +1,24 @@
 import sys
 
-sys.stdin = open("./4. 두 리스트 합치기/in1.txt", "rt")
+sys.stdin = open("./4. 대표값/in1.txt", "rt")
 
-# aSize = int(input())
-# a = list(map(int, input().split()))
-# bSize = int(input())
-# b = list(map(int, input().split()))
-#
-# print(sorted(a+b))  //퀵소트라 nlogn
 
-aSize = int(input())
-a = list(map(int, input().split()))
-bSize = int(input())
-b = list(map(int, input().split()))  # 이미 정렬된 거 머지소트는 n 밖에 안걸림
+def sol():
+    t = int(input())
+    List = list(map(int, input().split()))
+    avg = round(sum(List) / t)
+    temp = 21700000
+    for idx, value in enumerate(List):
+        if abs(value - avg) < temp:
+            temp = abs(value - avg)
+            score = value
+            res = idx + 1
+        elif abs(value - avg) == temp:
+            if score < value:
+                score = value
+                res = idx + 1
+    print(avg, res)
 
-p1 = p2 = 0
-c = []
-while p1 < aSize and p2 < bSize:
-    if a[p1] <= b[p2]:
-        c.append(a[p1])
-        p1 += 1
-    else:
-        c.append(b[p2])
-        p2 += 1
-if p1 < aSize:
-    c += a[p1:]
-else:
-    c += b[p2:]
-print(c)
+
+if __name__ == '__main__':
+    sol()

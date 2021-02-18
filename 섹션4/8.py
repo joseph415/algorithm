@@ -1,22 +1,38 @@
 import sys
-from collections import deque
 
-sys.stdin = open("./8. 단어찾기/in5.txt", "rt")
-n = int(input())
-p = dict()
+sys.stdin = open("./8. 침몰하는 타이타닉/in4.txt", "rt")
 
-for i in range(n):
-    word = input()
-    p[word] = 1
+n, m = map(int, input().split())
+a = list(map(int, input().split()))
+a.sort()
+print(n, m, a)
+lp = 0
+rp = 1
+cnt = 0
+while a:
+    if len(a) == 1:
+        cnt += 1
+        a.pop()
+        print(a)
+        continue
+    elif rp == len(a):
+        cnt += 1
+        a.pop(rp - 1)
+        a.pop(lp)
+        print(a)
+        rp = 1
+        continue
+    else:
+        if a[lp] + a[rp] <= m:
+            rp += 1
+        else:
+            cnt += 1
+            if rp - 1 != lp:
+                a.pop(rp - 1)
+                a.pop(lp)
+            else:
+                a.pop(lp)
+            print(a)
+            rp = 1
+print(cnt)
 
-for i in range(n - 1):
-    word = input()
-    p[word] = 0
-
-for i in p:
-    print(p[i])
-
-for i in p.keys():
-    if p[i] == 1:
-        print(i)
-        break

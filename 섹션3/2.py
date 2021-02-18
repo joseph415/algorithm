@@ -1,22 +1,23 @@
 import sys
 
-sys.stdin = open("2. 랜선자르기/in5.txt", "rt")
+sys.stdin = open("./2. 숫자만 추출/in5.txt", "rt")
 
-n, target = map(int, input().split())
-k = [int(input()) for _ in range(n)]
-k.sort()
-Max = -2147000000
-left = 0
-right = n - 1
-mid = (k[left] + k[right]) // 2
-while left <= right:
-    s = 0
-    for i in range(n):
-        s += k[i] // mid
-    if s < target:
-        right = mid - 1
-        mid = (left + right) // 2
-    elif s >= target:
-        left = mid + 1
-        mid = (left + right) // 2
-print(mid)
+String = input()
+temp = []
+for i in String:
+    """
+    if i.decimal <-- 10진수(0~9)까지 이면 이고 digit는 그냥 숫자 2^32 4 이런거 전부
+    if x.isdecimal():
+        res=res*10+int(x)
+    """
+    if chr(48) <= i <= chr(57):
+        temp.append(i)
+res = int("".join(temp))
+print(res)
+count = 1
+for i in range(2, res + 1):
+    if res % i == 0:
+        count += 1
+print(count)
+
+

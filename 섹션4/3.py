@@ -1,28 +1,27 @@
 import sys
 
-sys.stdin = open("./3. 후위표기식 만들기/in5.txt", "rt")
+sys.stdin = open("./3. 뮤직비디오/in6.txt", "rt")
 
-a = input()
-stack = []
-res = ''
-for x in a:
-    if x.isdecimal():
-        res += x
+m, n = map(int, input().split())
+k = list(map(int, input().split()))
+
+left = k[0]
+right = sum(k)
+cnt = 0
+res = 0
+while left <= right:
+    cnt = 1
+    rp = 0
+    tot = 0
+    mid = (left + right) // 2
+    for i in range(m):
+        if tot + k[i] > mid:
+            cnt += 1
+            tot = 0
+        tot += k[i]
+    if cnt <= n:
+        res = mid
+        right = mid - 1
     else:
-        if x == '(':
-            stack.append(x)
-        elif x == "*" or x == '/':
-            while stack and (stack[-1] == '*' or stack[-1] == '/'):
-                res += stack.pop()
-            stack.append(x)
-        elif x == '+' or x == '-':
-            while stack and (stack[-1] != '('):
-                res += stack.pop()
-            stack.append(x)
-        elif x == ')':
-            while stack and stack[-1] != '(':
-                res += stack.pop()
-            stack.pop()
-while stack:
-    res += stack.pop()
+        left = mid + 1
 print(res)

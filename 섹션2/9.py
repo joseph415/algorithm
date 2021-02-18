@@ -1,20 +1,38 @@
 import sys
 
-sys.stdin = open("./9. 봉우리/in5.txt", "rt")
+sys.stdin = open("./9. 주사위 게임/in5.txt", "rt")
 
-n = int(input())
-a = [list(map(int, input().split())) for _ in range(n)]
+# t = int(input())
+# Max = 0
+# while t > 0:
+#     a = list(map(int, input().split()))
+#     a.sort()
+#     if a[0] == a[1] and a[1] == a[2]:
+#         Sum = 10000 + a[0] * 1000
+#     elif a[0] == a[1] or a[1] == a[2]:
+#         Sum = 1000 + a[1] * 100
+#     else:
+#         Sum = max(a) * 100
+#     if Max < Sum:
+#         Max = Sum
+#     t -= 1
+#
+# print(Max)
 
-for i in range(n):
-    a[i].append(0)
-    a[i].insert(0, 0)
-
-temp = [0 for _ in range(len(a[0]))]
-a.insert(0, temp)
-a.append(temp)
-cnt = 0
-for i in range(1, n + 1):
-    for j in range(1, n + 1):
-        if a[i][j] > a[i - 1][j] and a[i][j] > a[i][j + 1] and a[i][j] > a[i + 1][j] and a[i][j] > a[i][j - 1]:
-            cnt += 1
-print(cnt)
+t = int(input())
+Max = 0
+for i in range(t):
+    temp = input().split()
+    temp.sort()
+    a, b, c = map(int, temp)
+    if a == b and b == c:
+        Sum = 10000 + a * 1000
+    elif a == b or a == c:
+        Sum = 1000 + a * 100
+    elif b == c:
+        Sum = 1000 + b * 100
+    else:
+        Sum = max(a) * 100
+    if Max < Sum:
+        Max = Sum
+print(Max)

@@ -1,36 +1,63 @@
 import sys
+import math
 
-sys.stdin = open("./8. 곳감/in5.txt", "rt")
+sys.stdin = open("./8. 뒤집은 수/in1.txt", "rt")
 
+# n = int(input())
+#
+# a = input().split()
+#
+#
+# def reverse(x):
+#     x = x[::-1]
+#     return int(x)
+#
+#
+# def prime(x):
+#     if x != 1:
+#         for i in range(2, x):
+#             if x % i == 0:
+#                 return False
+#         return True
+#
+#
+# for i in a:
+#     if prime(reverse(i)):
+#         print(reverse(i), end=' ')
+
+
+# 풀이
 n = int(input())
 
-a = [list(map(int, input().split())) for _ in range(n)]
+a = map(int, input().split())
 
-b = int(input())
 
-c = [list(map(int, input().split())) for _ in range(b)]
+def reverse(x):
+    res = 0
+    while x > 0:
+        t = x % 10
+        res = res * 10 + t
+        x = x // 10
+    return res
 
-for i in range(b):
-    temp = a[c[i][0] - 1][:]
-    # temp = list(a[c[i][0]-1)
-    if c[i][1] == 0:
-        for j in range(n):
-            a[c[i][0] - 1][(j - c[i][2]) % n] = temp[j]
-    else:
-        for j in range(n):
-            a[c[i][0] - 1][(j + c[i][2]) % n] = temp[j]
 
-lp = 0
-rp = n
-mid = n // 2
-s = 0
-for i in range(n):
-    for j in range(lp, rp):
-        s += a[i][j]
-    if i < mid:
-        lp += 1
-        rp -= 1
-    else:
-        lp -= 1
-        rp += 1
-print(s)
+def isPrime(x):
+    if x == 1:
+        return False
+    # 1 자기자신 제외하면 절반까지만 존재
+    # 루트 까지만 해도됨
+    for i in range(2, int(math.sqrt(x) + 1)):
+        if x % i == 0:
+            return False
+    return True
+
+
+for x in a:
+    tmp = reverse(x)
+    if isPrime(tmp):
+        print(tmp, end=" ")
+
+'''파이선스럽지 않은 코드'''
+# def reverse(x):
+#     x = ''.join(reversed((str(x))))
+#     return int(x)

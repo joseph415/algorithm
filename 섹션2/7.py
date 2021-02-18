@@ -1,23 +1,24 @@
 import sys
+import math
 
-sys.stdin = open("./7. 사과나무/in5.txt", "rt")
+sys.stdin = open("./7. 에라토스테네스 체/in5.txt", "rt")
 
-n = int(input())
+N = int(input())
+check = [False for i in range(N + 1)]
+count = 0
 
-a = [list(map(int, input().split())) for _ in range(n)]
+for i in range(2, int(math.sqrt(N + 1)) + 1):
+    for j in range(i+i, N + 1, i):
+        check[j] = True
 
-mid = n // 2
+for i in range(2, N + 1):
+    if not (check[i]):
+        count += 1
+print(count)
 
-lp = rp = mid
-s = 0
-
-for i in range(n):
-    for j in range(lp, rp + 1):
-        s += a[i][j]
-    if i < mid:
-        lp -= 1
-        rp += 1
-    else:
-        lp += 1
-        rp -= 1
-print(s)
+# for i in range(2, N + 1):
+#     if not (check[i]):
+#         count += 1
+#         for j in range(i, N + 1, i):
+#             check[j] = True
+# print(count)

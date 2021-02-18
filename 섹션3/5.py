@@ -1,13 +1,23 @@
 import sys
 
-sys.stdin = open("./5. 회의실 배정/in6.txt", "rt")
-n = int(input())
-a = [list(map(int, input().split())) for _ in range(n)]
-a.sort(key=lambda x: (x[1], x[0]))
+sys.stdin = open("./5. 수들의 합/in5.txt", "rt")
+
+a, b = map(int, input().split())
+n = list(map(int, input().split()))
+lt = 0
+rt = 1
+tot = n[lt]
 cnt = 0
-et = 0
-for s, e in a:
-    if s >= et:
-        et = e
+while lt <= rt:
+    if tot < b:
+        if rt < a:
+            tot += n[rt]
+            rt += 1
+        else:
+            break
+        continue
+    elif tot == b:
         cnt += 1
+    tot -= n[lt]
+    lt += 1
 print(cnt)

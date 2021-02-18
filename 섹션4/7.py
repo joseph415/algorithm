@@ -1,20 +1,14 @@
 import sys
-from collections import deque
 
-sys.stdin = open("./7. 교육과정 설계/in1.txt", "rt")
-need = input()
-n = int(input())
+sys.stdin = open("./7. 창고 정리/in5.txt", "rt")
+height = int(input())
+row = list(map(int, input().split()))
+t = int(input())
+row.sort()
 
-for i in range(n):
-    dq = deque(need)
-    target = deque(input())
-    for x in target:
-        if x in dq:
-            if x != dq.popleft():
-                print("#%d NO" %(i+1))
-                break
-    else:
-        if len(dq) == 0:
-            print("#%d YES" %(i+1))
-        else:
-            print("#%d NO" %(i+1))
+while t > 0:
+    row[height - 1] -= 1
+    row[0] += 1
+    t -= 1
+    row.sort()
+print(row[height-1] - row[0])

@@ -1,24 +1,17 @@
 import sys
-from collections import deque
 
-sys.stdin = open("./6. 응급실/in5.txt", "rt")
-m, k = map(int, input().split())
-# a = list(map(int, input().split()))
-# List = [(a[i], i) for i in range(m)]
+sys.stdin = open("./6. 씨름선수/in5.txt", "rt")
 
-List = [i for i in enumerate(list(map(int, input().split())))]
-
-d = deque(List)
+n = int(input())
+a = [list(map(int, input().split())) for _ in range(n)]
+a.sort()
 cnt = 0
-
-while True:
-    temp = d.popleft()
-    for i in d:
-        if temp[1] < i[1]:
-            d.append(temp)
+for i in range(n):
+    for j in range(n):
+        height = a[i][0]
+        weight = a[i][1]
+        if height < a[j][0] and weight < a[j][1]:
             break
     else:
         cnt += 1
-        if k == temp[0]:
-            print(cnt)
-            break
+print(cnt)

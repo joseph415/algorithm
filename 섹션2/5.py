@@ -1,23 +1,18 @@
 import sys
 
-sys.stdin = open("./5. 수들의 합/in5.txt", "rt")
+sys.stdin = open("./5. 정다면체/in5.txt", "rt")
 
-a, b = map(int, input().split())
-n = list(map(int, input().split()))
-lt = 0
-rt = 1
-tot = n[lt]
-cnt = 0
-while lt <= rt:
-    if tot < b:
-        if rt < a:
-            tot += n[rt]
-            rt += 1
-        else:
-            break
-        continue
-    elif tot == b:
-        cnt += 1
-    tot -= n[lt]
-    lt += 1
-print(cnt)
+n, m = map(int, input().split())
+cnt = [0] * (n + m + 1)
+max = -2147000000  # 4byte 가장작은수
+for i in range(1, n + 1):
+    for j in range(1, m + 1):
+        cnt[i + j] += 1
+
+for i in range(n + m + 1):
+    if cnt[i] > max:
+        max = cnt[i]
+
+for i in range(n + m + 1):
+    if cnt[i] == max:
+        print(i, end=' ')

@@ -1,39 +1,20 @@
 import sys
 
-sys.stdin = open("./9. 증가수열 만들기/in2.txt")
+sys.stdin = open("./9. 봉우리/in5.txt", "rt")
 
 n = int(input())
-List = list(map(int, input().split()))
+a = [list(map(int, input().split())) for _ in range(n)]
 
-lp = 0
-rp = n - 1
-res = []
-temp = -1
-while lp <= rp:
-    if List[rp] < List[lp]:
-        if temp < List[rp]:
-            temp = List[rp]
-            res.append('R')
-            rp -= 1
-        else:
-            if temp < List[lp]:
-                temp = List[lp]
-                res.append('L')
-                lp += 1
-            else:
-                break
-    else:
-        if temp < List[lp]:
-            temp = List[lp]
-            res.append('L')
-            lp += 1
-        else:
-            if temp < List[rp]:
-                temp = List[rp]
-                res.append('R')
-                rp -= 1
-            else:
-                break
-print(len(res))
-for i in res:
-    print(i, end="")
+for i in range(n):
+    a[i].append(0)
+    a[i].insert(0, 0)
+
+temp = [0 for _ in range(len(a[0]))]
+a.insert(0, temp)
+a.append(temp)
+cnt = 0
+for i in range(1, n + 1):
+    for j in range(1, n + 1):
+        if a[i][j] > a[i - 1][j] and a[i][j] > a[i][j + 1] and a[i][j] > a[i + 1][j] and a[i][j] > a[i][j - 1]:
+            cnt += 1
+print(cnt)

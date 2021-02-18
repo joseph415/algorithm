@@ -1,29 +1,19 @@
 import sys
 
-sys.stdin = open("./1. 가장 큰 수/in6.txt", "rt")
+sys.stdin = open("1. 이분검색/in5.txt", "rt")
+n, target = map(int, input().split())
+a = list(map(int, input().split()))
 
-n, m = map(str, input().split())
-n = list(map(int, n))
-m = int(m)
-temp = 0
-res = []
-for i in range(len(n)):
-    a = int(n[i])
-    temp = a
-    for j in res[::-1]:
-        if j < a:
-            res.pop()
-            m -= 1
-        if m == 0:
-            break
-    res.append(a)
+a.sort()
+l = 0
+r = len(a) - 1
+while l <= r:
+    mid = (l + r) // 2
 
-    if m == 0:
-        res = res + list(n[i + 1:])
+    if target == a[mid]:
+        print(mid + 1)
         break
-if m != 0:
-    for i in res[:-m]:
-        print(i, end="")
-else:
-    res = ''.join(map(str, res))
-    print(res)
+    elif target > a[mid]:
+        l = mid + 1
+    elif target < a[mid]:
+        r = mid - 1

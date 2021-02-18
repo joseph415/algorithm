@@ -1,19 +1,12 @@
 import sys
 
-sys.stdin = open("1. 이분검색/in5.txt", "rt")
-n, target = map(int, input().split())
-a = list(map(int, input().split()))
+sys.stdin = open("./1. 회문 문자열 검사/in1.txt", "rt")
 
-a.sort()
-l = 0
-r = len(a) - 1
-while l <= r:
-    mid = (l + r) // 2
+n = int(input())
 
-    if target == a[mid]:
-        print(mid + 1)
-        break
-    elif target > a[mid]:
-        l = mid + 1
-    elif target < a[mid]:
-        r = mid - 1
+for i in range(n):
+    s = input()
+    if s.lower() == s[::-1].lower():
+        print("#%d Yes" % (i + 1))
+    else:
+        print("#%d No" % (i + 1))
