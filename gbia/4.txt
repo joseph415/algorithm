@@ -1,0 +1,6 @@
+-- 코드를 입력하세요
+SELECT distinct(c.USER_ID) FROM CARTS as c
+inner join CART_PRODUCTS as cp
+on c.id = cp.CART_ID
+where cp.NAME = 'Flour'
+order by c.USER_ID
