@@ -4,14 +4,14 @@ matrix = []
 def initMatrix(m, n, puddle):
     global matrix
 
-    matrix = [[-1 for _ in range(m)] for _ in range(n)]
+    matrix = [[-1] * m for _ in range(n)]
 
     for row, col in puddle:
         if matrix[col - 1][row - 1] == 0:
             continue
 
         if row == 1:
-            for k in range(col - 1, n):
+            for k in range(col, n):
                 matrix[k - 1][0] = 0
             continue
         if col == 1:
@@ -50,4 +50,4 @@ def solution(m, n, puddles):
 
 
 if __name__ == '__main__':
-    print(solution(1, 3, [[1, 2]]))
+    print(solution(4, 4, [[1, 3]]))
