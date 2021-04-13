@@ -37,7 +37,7 @@ def search(m, n):
                 matrix[col][row] = matrix[col - 1][row]
                 continue
 
-            matrix[col][row] = matrix[col - 1][row] + matrix[col][row - 1]
+            matrix[col][row] = matrix[col - 1][row] + matrix[col][row - 1] % 1000000007
 
 
 def solution(m, n, puddles):
