@@ -1,9 +1,15 @@
-/섹션2/.idea
-/섹션3/.idea
-/섹션4/.idea
-/섹션5/.idea
-/섹션6/.idea
+# common
+**/.idea
+**/out/
+*.iml
+
+# python
 .DS_Store
-/gbia
-/kakao
-/devmatching
+python/gbia
+python/kakao
+python/devmatching
+
+# java
+java/algorithm-java/src/kakaocommerce
+java/algorithm-java/src/kakao
+java/algorithm-java/src/naverweb
